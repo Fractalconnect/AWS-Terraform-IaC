@@ -6,7 +6,7 @@ provider "aws" {
 
 terraform {
   	backend "remote" {
-    	organization = "turbonomiclabs"
+    	organization = "FractalConnect"
 
     workspaces {
       	name = "terraform-eks-lab"

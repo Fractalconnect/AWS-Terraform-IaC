@@ -8,7 +8,7 @@ resource "aws_subnet" "eks-lab-pub" {
     tags = {
     	Name = "eks-lab"
     	Terraform = "true"
-    	Turbonomic = "true"
+    	Fractalconnect = "true"
     	"kubernetes.io/cluster/eks-lab" = "shared"
     	"kubernetes.io/role/elb" = "1"
         net = "public"
@@ -25,7 +25,7 @@ resource "aws_subnet" "eks-lab-priv" {
     tags = {
     	Name = "eks-lab"
     	Terraform = "true"
-    	Turbonomic = "true"
+    	Fractalconnect = "true"
     	"kubernetes.io/cluster/eks-lab" = "shared"
     	"kubernetes.io/role/internal-elb" = "1"
         net = "private"

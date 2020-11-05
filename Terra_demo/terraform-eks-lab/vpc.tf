@@ -8,7 +8,7 @@ resource "aws_vpc" "eks-lab-vpc" {
   tags = {
     Name = "eks-lab"
     Terraform = "true"
-    Turbonomic = "true"
+    Fractalconnect= "true"
     "kubernetes.io/cluster/eks-lab" = "shared"
   }
 }
