@@ -1,0 +1,16 @@
+---
+- name: ec2 launch
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: launch ec2
+    ec2:
+       instance_type: t2.micro
+       key_name: CAN-KP1
+       image: ami-0c2f25c1f66a1ff4d #get ami type from launch instance in AWS console
+       region: ca-central-1
+       group: default
+       count: 1
+       vpc_subnet_id: subnet-05e96fe8c2471fa01  #get subnet-id from VPC section under subnets 
+       wait: yes
+       assign_public_ip: yes
